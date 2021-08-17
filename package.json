@@ -1,0 +1,29 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple boilerplate",
+  "main": "index.js",
+  "scripts": {    
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "babel src/server --out-dir ./dist",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harry100/react-boilerplate.git"
+  },
+  "author": "Amanda Maharjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harry100/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/harry100/react-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
